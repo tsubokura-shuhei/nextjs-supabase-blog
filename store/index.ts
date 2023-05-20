@@ -1,7 +1,7 @@
 //Zustand Reactの状態管理ライブラリ
 // https://github.com/pmndrs/zustand
 
-import { create } from "zustand";
+import create from "zustand";
 
 type User = {
   id: string | undefined;
@@ -13,9 +13,11 @@ type State = {
   setUser: (payload: User) => void;
 };
 
-export const useStore = create<State>((set) => ({
+const useStore = create<State>((set) => ({
   //初期値
   user: { id: "", email: "" },
   //アップデート
   setUser: (payload) => set({ user: payload }),
 }));
+
+export default useStore;

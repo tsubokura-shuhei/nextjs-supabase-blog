@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useStore } from "../../store";
+import useStore from "../../store";
 
 // ナビゲーション
 const Navigation = () => {

@@ -4,7 +4,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSupabase } from "./supabase-provider";
-import { useStore } from "../../store";
+import useStore from "../../store";
 
 //ユーザーがログインまたはログアウトするたびに新しいセッションを取得する
 const SupabaseListener = ({
